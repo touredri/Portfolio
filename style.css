@@ -12,7 +12,7 @@ li a {
   text-decoration: none;
 }
 
-/* Desktop part https://formspree.io/f/mwkjpdrl*/
+/* Desktop part https://formspree.io/f/mwkjpdrl */
 
 @media only screen and (min-width: 768px) {
   .mob_work,
@@ -62,6 +62,7 @@ li a {
     align-items: center;
     margin-right: 30px;
   }
+  
   .nav_links a,
   .social a {
     color: #344563;
