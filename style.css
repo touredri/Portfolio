@@ -77,7 +77,7 @@ li a {
   .present h1 {
     position: relative;
     top: 200px;
-    left: 200px;
+    left: 130px;
     width: 60%;
     height: 122px;
     font-weight: 700;
@@ -92,7 +92,7 @@ li a {
   .present p {
     position: relative;
     top: 175px;
-    left: 200px;
+    left: 130px;
     width: 70%;
     height: 92px;
     font-size: 20px;
@@ -105,8 +105,8 @@ li a {
 
   .present h3 {
     position: relative;
-    top: 173px;
-    left: 200px;
+    top: 179px;
+    left: 130px;
     font-weight: 500;
     font-size: 16px;
     line-height: 24px;
@@ -117,7 +117,7 @@ li a {
   .present > .social {
     position: relative;
     top: 180px;
-    left: 200px;
+    left: 130px;
     display: flex;
     gap: 10px;
     font-size: 25px;
@@ -133,8 +133,8 @@ li a {
   }
 
   .projet_img {
-    max-width: 500px;
-    height: 448px;
+    width: 50%;
+    height: 350px;
   }
 
   .item {
@@ -142,8 +142,8 @@ li a {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    gap: 30px;
-    width: 80%;
+    gap: 10px;
+    width: 90%;
     height: 500px;
     margin-bottom: 50px;
     font-family: 'Poppins', sans-serif;
