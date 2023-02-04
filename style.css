@@ -555,6 +555,13 @@ button:active {
     margin: 0;
   }
 
+  .social {
+    margin-bottom: 10px;
+    margin-left: 10px;
+    display: flex;
+    gap: 18px;
+  }
+
   .present > .social {
     position: relative;
     top: 200px;
@@ -632,7 +639,7 @@ button:active {
     background-color: #fff;
     border: 1px solid #dfe1e6;
     border-top-right-radius: 70px;
-    padding: 0px 10px 1px 10px;
+    padding: 0 10px 1px 10px;
     height: 1263px;
   }
 
@@ -649,13 +656,6 @@ button:active {
     font-weight: 500;
     font-size: 16px;
     line-height: 24px;
-  }
-
-  .social {
-    margin-bottom: 10px;
-    margin-left: 10px;
-    display: flex;
-    gap: 18px;
   }
 
   .expertise {
@@ -677,7 +677,7 @@ button:active {
     line-height: 24px;
     display: flex;
     align-items: center;
-    color: #000000;
+    color: #000;
   }
 
   .list_language {
@@ -775,11 +775,6 @@ button:active {
     color: #172b4d;
   }
 
-  input:hover,
-  #message:hover {
-    border: 1px solid #0943e2;
-  }
-
   #message {
     width: 327px;
     height: 170px;
@@ -789,6 +784,11 @@ button:active {
     margin-bottom: 0;
     text-align: start;
     font-size: 20px;
+  }
+
+  input:hover,
+  #message:hover {
+    border: 1px solid #0943e2;
   }
 
   #message::placeholder {
