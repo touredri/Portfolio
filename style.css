@@ -29,9 +29,10 @@ nav i {
   font-size: 30px;
   color: #6070ff;
   padding-right: 40px;
+  display: flex;
 }
 
-nav {
+header {
   position: fixed;
   top: 0;
   z-index: 5;
@@ -40,12 +41,14 @@ nav {
   justify-content: space-between;
   align-items: center;
   background-color: #fff;
-  width: 100%;
   padding-left: 12px;
   padding-right: 12px;
+  width: 100%;
 }
 
 .logo h4 {
+  /* position: fixed; */
+  top: 0;
   width: 76px;
   height: 20px;
   font-weight: 700;
