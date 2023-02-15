@@ -39,9 +39,10 @@ li a {
   flex-direction: row;
   gap: 5px;
   margin-bottom: 20px;
+  padding: 0;
 }
 
-.languages p {
+.languages li {
   font-weight: 500;
   font-size: 12px;
   line-height: 16px;
@@ -531,7 +532,7 @@ button:active {
     top: 200px;
     max-width: 327px;
     font-weight: 700;
-    font-size: 40px;
+    font-size: 44px;
     line-height: 52px;
     color: #172b4d;
     margin: 0;
@@ -547,7 +548,7 @@ button:active {
     line-height: 28px;
     color: #344563;
     margin: 0;
-    padding-right: 8 px;
+    padding-right: 10px;
   }
 
   .present h3 {
@@ -591,7 +592,7 @@ button:active {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    gap: 10px;
+    gap: 15px;
     background-color: #fff;
     border: 1px solid #dfe1e6;
     border-radius: 16px;
@@ -601,7 +602,7 @@ button:active {
 
   h2 {
     font-weight: 700;
-    font-size: 32px;
+    font-size: 42px;
     line-height: 44px;
     color: #172b4d;
     margin: 0;
@@ -619,6 +620,10 @@ button:active {
   .languages,
   .description {
     margin-bottom: 0;
+  }
+
+  .item button {
+    margin-top: 18px;
   }
 
   .description {
