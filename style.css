@@ -88,10 +88,7 @@ button:active {
 
   /* Header section */
   header {
-    background-color: white;
-    height: 816px;
-    border: 1px solid #fff;
-    border-bottom-left-radius: 80px;
+     background-color: white;
   }
 
   .container {
@@ -136,9 +133,15 @@ button:active {
   }
 
   .present {
-    background-image: url(./images/Header_bground.png);
-    background-repeat: no-repeat;
-    background-size: cover;
+    background: url(./images/Header_bground.png);
+    background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
+    background-color: white;
+    height: 816px;
+    border: 1px solid #fff;
+    border-bottom-left-radius: 80px;
+
   }
 
   .present h1 {
@@ -184,7 +187,7 @@ button:active {
   .present > .social {
     position: relative;
     top: 189px;
-    left: 130px;
+    left: 100px;
     display: flex;
     gap: 10px;
     font-size: 25px;
@@ -209,7 +212,7 @@ button:active {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    gap: 15px;
+    gap: 25px;
     width: 90%;
     height: 500px;
     margin-bottom: 50px;
@@ -345,7 +348,7 @@ button:active {
     border-bottom: 1px solid #dfe1e6;
   }
 
-  .list_language {
+  .list_language ul {
     display: flex;
     flex-direction: row;
     gap: 10px;
@@ -476,14 +479,9 @@ button:active {
 
   header {
     background-color: #fff;
-    background-image: url(./images/header-mobile.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 718px;
-    border: 1px solid #fff;
-    border-bottom-left-radius: 70px;
-    margin-bottom: 60px;
   }
+
+  
 
   nav i {
     font-size: 30px;
@@ -501,6 +499,8 @@ button:active {
     align-items: center;
     background-color: #fff;
     width: 100%;
+    padding-left: 12px;
+    padding-right: 12px;
   }
 
   .logo h4 {
@@ -514,11 +514,20 @@ button:active {
   }
 
   .present {
+    background-color: #fff;
+    background-image: url(./images/header-mobile.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: -60px;
+    height: 718px;
+    border: 1px solid #fff;
+    border-bottom-left-radius: 70px;
+    margin-bottom: 60px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    padding-left: 10px;
+    /* justify-content: center;
+    align-items: flex-start; */
+    padding-left: 30px;
     gap: 10px;
   }
 
@@ -543,6 +552,7 @@ button:active {
     line-height: 28px;
     color: #344563;
     margin: 0;
+    padding-right: 8                  px;
   }
 
   .present h3 {
@@ -555,21 +565,24 @@ button:active {
     margin: 0;
   }
 
-  .social {
+  /* .social {
     margin-bottom: 10px;
     margin-left: 10px;
     display: flex;
     gap: 18px;
-  }
+    flex-grow: 0;
+  } */
 
-  .present > .social {
+  .present ul {
     position: relative;
     top: 200px;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    /* justify-content: space-between; */
     align-items: center;
-    gap: 10px;
+    gap: 20px;
+    padding-left: 0;
+    /* flex-grow: 0; */
   }
 
   .social i {
@@ -680,12 +693,12 @@ button:active {
     color: #000;
   }
 
-  .list_language {
+  .list_language ul {
     display: flex;
     flex-direction: column;
     justify-content: center;
     gap: 10px;
-    margin-left: 10px;
+    /* margin-left: 10px; */
   }
 
   .list_language h3 {
