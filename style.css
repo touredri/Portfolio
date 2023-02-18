@@ -21,18 +21,8 @@ li a {
   }
 
   /* Header section */
+  
   header {
-    background-color: white;
-    height: 816px;
-    border: 1px solid #fff;
-    border-bottom-left-radius: 80px;
-  }
-
-  .container {
-    margin: 0 auto;
-  }
-
-  nav {
     position: fixed;
     display: flex;
     flex-direction: row;
@@ -42,43 +32,67 @@ li a {
     top: 0;
     left: 0;
     z-index: 5;
+    padding-left: 85px;
   }
 
   .logo {
     color: #6070ff;
     font-weight: 700;
-    font-size: 18px;
+    font-size: 1rem;
     line-height: 20px;
-    margin-left: 30px;
   }
 
   .nav_links {
     display: flex;
     gap: 10px;
-    font-size: 15px;
+    font-size: 1rem;
     font-weight: 500;
     line-height: 24px;
     letter-spacing: 0.03em;
     text-transform: uppercase;
     align-items: center;
-    margin-right: 30px;
+    margin-right: 168px;
+  }
+  
+  .nav_links a::after {
+    content: "";
+    display: block;
+    position: absolute; 
+    bottom: -3px;
+    width: 100%;
+    height: 1px;
+    transform: scaleX(0);
+    transform-origin: left;
+    background: #333;
+    transition: transform 0.3s ease-out;
+  }
+  
+  .nav_links a:hover::after {
+    transform: scaleX(1)
   }
 
-  .nav_links a,
   .social a {
     color: #344563;
   }
 
   .present {
+    background-color: white;
+    height: 916px;
+    border: 1px solid #fff;
+    border-bottom-left-radius: 80px;
     background-image: url(./images/Header_bground.png);
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
   }
 
   .present h1 {
     position: relative;
-    top: 200px;
-    left: 130px;
+    top: -60px;
+    left: 260px;
     width: 60%;
     height: 122px;
     font-weight: 700;
@@ -88,28 +102,29 @@ li a {
     align-items: center;
     letter-spacing: 0.37px;
     color: #091e42;
+    margin-bottom: 0;
   }
 
   .present p {
     position: relative;
-    top: 175px;
-    left: 130px;
-    width: 70%;
-    height: 92px;
-    font-size: 20px;
+    top: -70px;
+    left: 260px;
+    max-width: 50%;
+    font-size: 1.3rem;
     line-height: 28px;
     display: flex;
     align-items: center;
     letter-spacing: 0.03em;
     color: #344563;
+    margin-bottom: 0;
   }
 
   .present h3 {
     position: relative;
-    top: 179px;
-    left: 130px;
+    top: -80px;
+    left: 260px;
     font-weight: 500;
-    font-size: 16px;
+    font-size: 1.3rem;
     line-height: 24px;
     color: #7f8cff;
     max-width: 200px;
@@ -117,21 +132,28 @@ li a {
 
   .present > .social {
     position: relative;
-    top: 180px;
-    left: 130px;
+    top: -119px;
+    left: 230px;
     display: flex;
     gap: 10px;
-    font-size: 25px;
+    font-size: 2.2rem;
     color: #505f79;
     max-width: 200px;
   }
+  
+   /* work section css   */
 
-  .desk_work {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 100px;
-  }
+   .desk_work {
+     display: grid;
+     justify-items: center;
+     align-items: center;
+     grid-template-columns: 1fr;
+     grid-template-rows: repeat(auto-fit, minmax(300px, 1fr));
+     margin-bottom: 80px;
+     margin-top: 80px;
+     padding: 15px;
+     gap: 80px;
+   }
 
   .projet_img {
     width: 50%;
@@ -143,16 +165,20 @@ li a {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    gap: 15px;
-    width: 90%;
+    gap: 25px;
+    width: 95%;
     height: 500px;
     margin-bottom: 50px;
     font-family: 'Poppins', sans-serif;
     font-style: normal;
     background: #fff;
-    padding: 10px;
+    padding: 20px;
     border: 1px solid #dfe1e6;
     border-radius: 24px;
+  }
+  
+  .info_projet {
+    margin-top: -150px;
   }
 
   .info_projet h2 {
@@ -282,12 +308,11 @@ li a {
     color: #344563;
     margin-bottom: 0;
     max-width: 447px;
-    height: 132px;
   }
 
   .about_me h3 {
     position: relative;
-    top: 30px;
+    top: 10px;
     font-weight: 500;
     font-size: 16px;
     line-height: 24px;
@@ -298,7 +323,7 @@ li a {
 
   .about_me > .social {
     position: relative;
-    top: 50px;
+    top: 10px;
     display: flex;
     gap: 10px;
     font-size: 25px;
@@ -308,7 +333,7 @@ li a {
 
   .about_me button {
     position: relative;
-    top: 60px;
+    top: 20px;
   }
 
   .expertise {
