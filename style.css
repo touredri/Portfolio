@@ -782,8 +782,9 @@ button:active {
   .contact {
     background-color: #396df2;
     background-image: url(./images/bg_bout.png);
-    background-size: cover;
-    background-position-y: -90px;
+    background-repeat: no-repeat;
+    background-size: 50%;
+    background-position: 240px 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -805,7 +806,6 @@ button:active {
   }
 
   .contact p {
-    /* height: 102px; */
     font-weight: 400;
     font-size: 20px;
     line-height: 28px;
