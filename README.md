@@ -34,7 +34,7 @@
 
 
 
-# 📖 [Mugagga Frank Portfolio] <a name="about-project"></a>
+# 📖 [Drissa Portfolio] <a name="about-project"></a>
 
 Describe your project in 1 or 2 sentences.
 
