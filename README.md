@@ -127,7 +127,7 @@ npx stylelint "**/*.{css,scss}"
 Track JavaScript linter errors run:
 ```
 npx eslint .
-
+```
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
