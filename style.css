@@ -27,14 +27,14 @@ li a {
 
 .client {
   font-weight: 500;
-  font-size: 18px;
+  font-size: 16px;
   line-height: 24px;
   color: #344563;
 }
 
 .service {
   font-weight: 400;
-  font-size: 18px;
+  font-size: 14px;
   line-height: 24px;
   color: #6b778c;
 }
@@ -180,9 +180,9 @@ button:active {
     border-bottom-left-radius: 80px;
     background-image: url(./images/Header_bground.png);
     background-repeat: no-repeat;
-    background-size: 100% 60%;
-    background-position-y: 90px;
-    background-position-x: 60px;
+    background-size: 100% 80%;
+    background-position-y: 10px;
+    background-position-x: 70px;
     display: flex;
     flex-direction: column;
     justify-content: center;
