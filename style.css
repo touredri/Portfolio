@@ -104,9 +104,7 @@ button:active {
 
 @media only screen and (min-width: 768px) {
   .mob_work,
-  .nav_links i,
-  .show,
-  .menu_content {
+  .nav_links i {
     display: none;
   }
 
@@ -524,9 +522,7 @@ button:active {
 
 @media (max-width: 767px) {
   .desk_work,
-  .nav_links a,
-  .desk_popup,
-  .popupd {
+  .nav_links a {
     display: none;
   }
 
