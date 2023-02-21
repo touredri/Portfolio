@@ -783,9 +783,7 @@ button:active {
     background-color: #396df2;
     background-image: url(./images/bg_bout.png);
     background-repeat: no-repeat;
-    background-size: 100%;
-    background-position-y: -60px;
-    background-position-x: 36px;
+    background-size: 50%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -794,6 +792,7 @@ button:active {
     border: solid transparent;
     border-top-left-radius: 80px;
     margin-top: -60px;
+    background-position: 240px 20px;
     padding: 20px;
   }
 
