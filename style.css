@@ -813,6 +813,7 @@ button:active {
     color: #ebebff;
     margin-top: 1px;
     /* margin-bottom: 30px; */
+    
     max-width: 480px;
   }
 
