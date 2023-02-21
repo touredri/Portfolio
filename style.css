@@ -648,7 +648,6 @@ button:active {
     border-radius: 16px;
     padding: 10px 10px 18px 10px;
     width: 92%;
-    height: 552px;
   }
 
   h2 {
@@ -776,11 +775,11 @@ button:active {
   /* Contact css part */
 
   .contact {
-    background-color: #396df2;
+    background-color: #6070ff;
     background-image: url(./images/bg_bout.png);
     background-repeat: no-repeat;
-    background-size: 50%;
-    background-position: 240px 20px;
+    background-size: 50% 100%;
+    background-position: 180px 10px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -837,6 +836,8 @@ button:active {
 
   input::placeholder {
     color: #172b4d;
+    padding-left: 20px;
+    font-size: 15px;
   }
 
   #message {
@@ -857,6 +858,6 @@ button:active {
     font-weight: 400;
     font-size: 15px;
     line-height: 24px;
-    padding: 10px;
+    padding: 10px 10px 10px 20px;
   }
 }
