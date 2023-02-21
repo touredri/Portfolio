@@ -180,7 +180,7 @@ button:active {
     border-bottom-left-radius: 80px;
     background-image: url(./images/Header_bground.png);
     background-repeat: no-repeat;
-    background-size: 100% 80%;
+    background-size: 90% 80%;
     background-position-y: 10px;
     background-position-x: 70px;
     display: flex;
@@ -208,7 +208,7 @@ button:active {
   .present p {
     position: relative;
     top: -70px;
-    max-width: 90%;
+    max-width: 80%;
     font-size: 1.3rem;
     line-height: 28px;
     display: flex;
@@ -490,7 +490,7 @@ button:active {
 
   input::placeholder {
     color: #172b4d;
-    font-size: 17px;
+    font-size: 15px;
     padding-left: 10px;
   }
 
