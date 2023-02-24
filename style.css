@@ -201,6 +201,15 @@ button:active {
     letter-spacing: 0.37px;
     color: #091e42;
     margin-bottom: 0;
+    transition: width 2s, height 4s;
+  }
+
+  .present h1:hover {
+    font-size: 46px;
+  }
+
+  .desk_work img:hover {
+      transform: rotate(6deg);
   }
 
   .present p {
