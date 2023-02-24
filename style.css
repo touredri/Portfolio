@@ -208,10 +208,6 @@ button:active {
     font-size: 46px;
   }
 
-  .desk_work img:hover {
-      transform: rotate(6deg);
-  }
-
   .present p {
     position: relative;
     top: -70px;
@@ -438,6 +434,10 @@ button:active {
     height: 110px;
     background: #f7f7f9;
     border-radius: 8px;
+  }
+
+  .desk_work img:hover {
+    transform: rotate(6deg);
   }
 
   /* Contact css start */
