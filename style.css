@@ -437,7 +437,13 @@ button:active {
   }
 
   .desk_work img:hover {
-    transform: rotate(6deg);
+    animation: myfirst 2s linear  infinite alternate;
+  }
+
+  @keyframes myfirst {
+    0% { transform: scale(1);}
+      
+      100% {transform: scale(1.1)};
   }
 
   /* Contact css start */
