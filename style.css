@@ -437,13 +437,17 @@ button:active {
   }
 
   .desk_work img:hover {
-    animation: myfirst 2s linear  infinite alternate;
+    animation: myfirst 2s linear infinite alternate;
   }
 
   @keyframes myfirst {
-    0% { transform: scale(1);}
-      
-      100% {transform: scale(1.1)};
+    0% {
+      transform: scale(1);
+    }
+
+    100% {
+      transform: scale(1.1);
+    }
   }
 
   /* Contact css start */
