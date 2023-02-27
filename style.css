@@ -201,6 +201,11 @@ button:active {
     letter-spacing: 0.37px;
     color: #091e42;
     margin-bottom: 0;
+    transition: width 2s, height 4s;
+  }
+
+  .present h1:hover {
+    font-size: 46px;
   }
 
   .present p {
@@ -429,6 +434,20 @@ button:active {
     height: 110px;
     background: #f7f7f9;
     border-radius: 8px;
+  }
+
+  .desk_work img:hover {
+    animation: myfirst 2s linear infinite alternate;
+  }
+
+  @keyframes myfirst {
+    0% {
+      transform: scale(1);
+    }
+
+    100% {
+      transform: scale(1.1);
+    }
   }
 
   /* Contact css start */
