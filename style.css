@@ -646,7 +646,12 @@ button:active {
     transform: translate(0%);
   }
 
-  .hamburger:hover,
+  .hamburger:hover {
+    background-color: initial;
+    color: initial;
+    text-decoration: initial;
+  }
+
   .hamburger:active {
     background-color: initial;
     color: initial;
