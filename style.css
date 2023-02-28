@@ -547,7 +547,6 @@ button:active {
 
   /* header section css */
 
-
   header {
     position: fixed;
     top: 0;
@@ -572,8 +571,8 @@ button:active {
     color: #6070ff;
     margin-left: 10px;
   }
-  
-    .hamburger {
+
+  .hamburger {
     width: 20px;
     height: 20px;
     cursor: pointer;
@@ -652,7 +651,6 @@ button:active {
     line-height: 44px;
     z-index: 35;
   }
-
 
   .present {
     background-color: #fff;
