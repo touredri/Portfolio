@@ -83,14 +83,14 @@ button {
   line-height: 24px;
   text-align: center;
   letter-spacing: 0.03em;
-  color: #396df2;
+  color: #1600d8;
   background-color: #fff;
   border: 1px solid #7f8cff;
   border-radius: 8px;
 }
 
 button:hover {
-  background-color: #6070ff;
+  background-color: #3345e2;
   color: #fff;
   cursor: pointer;
 }
@@ -122,7 +122,7 @@ button:active {
   }
 
   .logo {
-    color: #6070ff;
+    color: #0c23f3;
     font-weight: 700;
     font-size: 1rem;
     line-height: 20px;
@@ -227,7 +227,7 @@ button:active {
     font-weight: 500;
     font-size: 1.3rem;
     line-height: 24px;
-    color: #7f8cff;
+    color: #1930f8;
     max-width: 200px;
   }
 
@@ -353,7 +353,7 @@ button:active {
     font-weight: 500;
     font-size: 16px;
     line-height: 24px;
-    color: #7f8cff;
+    color: #152cf7;
     max-width: 200px;
     margin: 0;
   }
@@ -478,11 +478,11 @@ button:active {
 
   .contact p {
     height: 102px;
-    font-weight: 400;
+    font-weight: 500;
     font-size: 20px;
     line-height: 28px;
     text-align: center;
-    color: #ebebff;
+    color: #ffffff;
     width: 55%;
   }
 
@@ -575,7 +575,7 @@ button:active {
     font-weight: 700;
     font-size: 18px;
     line-height: 20px;
-    color: #6070ff;
+    color: #0c23f3;
     margin-left: 10px;
   }
 
@@ -626,7 +626,7 @@ button:active {
     font-weight: 500;
     font-size: 17px;
     line-height: 24px;
-    color: #7f8cff;
+    color: #1930f8;
     margin: 0;
   }
 
@@ -725,7 +725,7 @@ button:active {
   }
 
   .about_me h3 {
-    color: #7f8cff;
+    color: #152cf7;
     font-weight: 500;
     font-size: 16px;
     line-height: 24px;
