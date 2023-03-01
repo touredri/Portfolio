@@ -85,7 +85,7 @@ button {
   letter-spacing: 0.03em;
   color: #1600d8;
   background-color: #fff;
-  border: 1px solid #7f8cff;
+  border: 1px solid #4052ee;
   border-radius: 8px;
 }
 
@@ -534,6 +534,9 @@ button:active {
 
   .contact button {
     margin-left: 150px;
+  }
+  .contact button:hover {
+    background-color: #001aff;
   }
 }
 
