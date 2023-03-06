@@ -20,7 +20,8 @@ input:invalid {
 }
 
 li,
-li a {
+li a,
+.logo a {
   list-style: none;
   text-decoration: none;
 }
@@ -629,7 +630,7 @@ button:active {
     align-items: flex-start;
     justify-content: start;
     position: absolute;
-    background-color: #6070ff;
+    background-color: #3748e6e8;
     mix-blend-mode: multiply;
     top: -20px;
     left: 0;
