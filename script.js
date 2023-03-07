@@ -9,7 +9,7 @@ function scrollToSection(targetId) {
 const links = document.querySelectorAll('.scroll');
 links.forEach((link) => {
   link.addEventListener('click', (event) => {
-    event.preventDefault(); // prevent default link behavior
+    event.preventDefault();
     const targetId = link.getAttribute('href').substring(1);
     scrollToSection(targetId);
   });
