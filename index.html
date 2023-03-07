@@ -3,8 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
     <link rel="stylesheet" href="style.css" />
     <script src="https://kit.fontawesome.com/3b9cd09213.js" crossorigin="anonymous"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,18 +13,22 @@
 <body>
     <header>
         <div class="logo">
-          <p>My logo</p>
+          <a href="#porfolio"><h4>Drissas</h4></a>
         </div>
-      <nav>
+        <nav>
+        <button class="hamburger" type="button" aria-label="Toggle navigation" aria-expanded="false">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
         <ul class="nav_links">
           <li><a href="#porfolio" class="scroll">Portfolio</a></li>
           <li><a href="#about" class="scroll">about</a></li>
           <li><a href="#contact" class="scroll">contact</a></li>
-          <i class="fa-solid fa-bars" id="btn_menu"></i>
         </ul>
-      </nav>
+        </nav>
     </header>
-      <section class="present" id="porfolio">
+    <section class="present" id="porfolio">
         <h1>I’m Drissa, <br> Glad to see you!</h1>
         <p>
           I’m a software developer! I can help you build a product , feature or
@@ -38,10 +41,10 @@
           <li>  <a href="#"><i class="fa-brands fa-twitter"></i></a></li>
           <li>  <a href="#"><i class="fa-brands fa-linkedin"></i></a></li>
           <li>  <a href="#"><i class="fa-brands fa-mastodon"></i></a></li>
-            <li><a href="#"><i class="fa-brands fa-github"></i></a></li>
-            <li><a href="#"><i class="fa-brands fa-angellist"></i></a></li>
+          <li>  <a href="#"><i class="fa-brands fa-github"></i></a></li>
+          <li>  <a href="#"><i class="fa-brands fa-angellist"></i></a></li>
           </ul>
-      </section>
+    </section>
 
     <!-- wor section for desktop -->
 
@@ -99,6 +102,9 @@
                 <h2>Facebook 360</h2>
                 <div class="type">
                     <p class="client">FACEBOOK</p>
+                    <img src="./images/circle.png" alt="dot icon">
+                    <p class="service">Full Stack Dev</p>
+                    <img src="./images/circle.png" alt="dot icon">
                     <img src="./images/circle.png" alt="dot">
                     <p class="service">Full Stack Dev</p>
                     <img src="./images/circle.png" alt="dot">
@@ -300,8 +306,6 @@
             <button type="submit">Get in touch</button>
         </form>
     </section>
-
     <script src="./script.js"></script>
-
 </body>
 </html>
