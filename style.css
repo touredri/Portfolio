@@ -105,6 +105,7 @@ button:active {
 
 @media only screen and (min-width: 768px) {
   .mob_work,
+  .mobile-project,
   .nav_links i,
   .hamburger {
     display: none;
@@ -248,7 +249,8 @@ button:active {
 
   /* work section css   */
 
-  .desk_work {
+  .desk_work,
+  .desktop-project {
     display: grid;
     justify-items: center;
     align-items: center;
@@ -265,13 +267,14 @@ button:active {
     height: 450px;
   }
 
-  .item {
+  .item,
+  .desk-item {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
     gap: 25px;
-    width: 95%;
+    width: 80%;
     height: 500px;
     margin-bottom: 50px;
     font-family: 'Poppins', sans-serif;
@@ -298,7 +301,7 @@ button:active {
     display: flex;
     flex-direction: row;
     align-items: center;
-    gap: 10px;
+    gap: 5px;
     margin-top: 0;
     height: 30px;
   }
@@ -330,6 +333,7 @@ button:active {
     flex-direction: column;
     align-items: flex-start;
     width: 45%;
+    height: 600px;
   }
 
   .about_me h2 {
@@ -381,6 +385,7 @@ button:active {
     align-items: flex-start;
     gap: 10px;
     width: 55%;
+    height: 500px;
   }
 
   .domaine {
@@ -438,7 +443,7 @@ button:active {
     border-radius: 8px;
   }
 
-  .desk_work img:hover {
+  .projet_img:hover {
     animation: myfirst 2s linear infinite alternate;
   }
 
@@ -541,12 +546,139 @@ button:active {
   .contact button:hover {
     background-color: #020c68;
   }
+
+  body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .popupd {
+    background-color: #c1c7d0f6;
+    z-index: 999;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    top: 0;
+    padding-left: 25%;
+    padding-top: 2%;
+    display: none;
+    align-items: center;
+  }
+
+  .desk_popup {
+    display: block;
+    position: fixed;
+  }
+
+  .desk_pop_container {
+    display: grid;
+    grid-template-rows: 30px 15px 300px 200px;
+    background: #fff;
+    border: 1px solid #ebecf0;
+    box-shadow: 0 48px 48px rgb(37 47 137 / 8%);
+    border-radius: 16px;
+    padding: 20px;
+    padding-bottom: 0;
+    max-width: 700px;
+    max-height: 1090px;
+    overflow: scroll;
+    position: relative;
+  }
+
+  .imgs {
+    padding: 10px;
+    height: 120%;
+  }
+
+  .imgs img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .desk_pop_container .top {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .desk_pop_container .top h2 {
+    font-size: 16px;
+    font-weight: 700;
+    margin: 0;
+    margin-top: -4px;
+  }
+
+  .deta {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+  }
+
+  .par {
+    font-family: Poppins, serif;
+    font-size: 10px;
+    font-weight: 400;
+    position: relative;
+    top: 80px;
+  }
+
+  .tec {
+    /* margin-top: 20px; */
+    position: relative;
+    top: 90px;
+  }
+
+  .tec li {
+    font-size: 10px;
+    font-weight: 400;
+    margin: 2px;
+    max-width: 49px;
+    height: 12px;
+  }
+
+  .buttons {
+    font-size: 10px;
+    font-weight: 500;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+  }
+
+  .see-live,
+  .see-source {
+    background: #f9f9fc;
+    border: 1px solid #1c32fd;
+    border-radius: 8px;
+    color: #1c03fa;
+    padding: 10px 12px;
+    margin-right: 1px;
+    height: 40px;
+    display: flex;
+    width: 150px;
+    gap: 10px;
+  }
+
+  .tp {
+    margin-top: -20px;
+  }
+
+  .client,
+  .service {
+    font-size: 12px;
+    font-weight: 500;
+  }
+
+  .tec > .languages {
+    margin-bottom: 0;
+  }
 }
 
 /* Mobile part */
 
 @media (max-width: 767px) {
-  .desk_work {
+  .desk_work,
+  .desktop-project {
     display: none;
   }
 
@@ -737,7 +869,7 @@ button:active {
     color: #344563;
   }
 
-  .mob_work {
+  .mobile-project {
     display: grid;
     justify-items: center;
     align-items: center;
@@ -749,7 +881,7 @@ button:active {
     gap: 80px;
   }
 
-  .item {
+  .mobile_item {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -767,6 +899,7 @@ button:active {
     line-height: 44px;
     color: #172b4d;
     margin: 0;
+    width: 260px;
   }
 
   .type {
@@ -774,7 +907,7 @@ button:active {
     flex-direction: row;
     align-items: center;
     gap: 10px;
-    margin-top: 10px;
+    margin-top: 1px;
     height: 30px;
   }
 
@@ -785,6 +918,7 @@ button:active {
 
   .languages {
     margin-top: 15px;
+    margin-bottom: 15px;
   }
 
   .description {
@@ -792,6 +926,7 @@ button:active {
     font-size: 15px;
     line-height: 24px;
     color: #344563;
+    margin-top: 0;
   }
 
   /* about section css */
@@ -970,5 +1105,94 @@ button:active {
     font-size: 15px;
     line-height: 24px;
     padding: 10px 10px 10px 20px;
+  }
+
+  /* Popup mobile */
+
+  .popup {
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    height: 823px;
+    display: flex;
+    justify-content: center;
+    background: #c1c7d0;
+    padding: 35px;
+    z-index: 9999;
+    position: fixed;
+  }
+
+  .top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .client,
+  .service {
+    font-size: 10px;
+    color: #344563;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  .pop_container {
+    display: grid;
+    grid-template-rows: 1fr 45px 1fr 1fr 1fr 1fr;
+    max-height: 590px;
+    align-items: center;
+    padding: 20px;
+    background-color: white;
+    border-radius: 13px;
+
+    /* overflow: scroll; */
+  }
+
+  .pop_container .type {
+    margin-top: -40px;
+  }
+
+  #images,
+  #buttons {
+    margin-top: -30px;
+  }
+
+  .popclose {
+    color: #6d6b6b;
+    font-size: 30px;
+  }
+
+  .pop_container p {
+    margin-bottom: 0;
+    font-size: 15px;
+  }
+
+  .top h2 {
+    font-size: 23px;
+    width: 230px;
+  }
+
+  .pop_container > ul.languages {
+    margin-top: 10px;
+  }
+
+  .languages li {
+    margin-top: 0;
+    margin-bottom: 3px;
+  }
+
+  .buttons {
+    margin-top: -10px;
+  }
+
+  /* button i {
+    color: #6070ff;
+    font-size: 20px;
+  } */
+
+  .show {
+    display: none;
+    position: fixed;
   }
 }
