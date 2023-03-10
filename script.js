@@ -166,7 +166,7 @@ function popup(arr) {
             <li>bootstrap</li>
         </ul>
         <div class="buttons">
-            <button class="see-live" margin-left="10px">See Live <a href=${arr.live}></a><i class="fa-brands fa-github"></i></a></button>
+            <button class="see-live" margin-left="10px">See Live <a href=${arr.live}><i class="fa-brands fa-github"></i></a></button>
             <button class="see-source" class="btna">See Source <a href=${arr.source}><i class="fa-brands fa-github"></i></a></button>
         </div>
         </div>
@@ -174,7 +174,8 @@ function popup(arr) {
   `;
 
   pop.appendChild(deskpop);
-  document.body.appendChild(pop);
+  const project = document.querySelector('.desktop-project');
+  project.appendChild(pop);
   const close = deskpop.getElementsByClassName('closed')[0];
   close.addEventListener('click', () => {
     pop.classList.remove('desk_popup');

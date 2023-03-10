@@ -560,15 +560,17 @@ button:active {
     height: 100%;
     justify-content: center;
     top: 0;
-    padding-left: 25%;
+    /* padding-left: 15%; */
     padding-top: 2%;
     display: none;
     align-items: center;
+    
+    position: fixed;
   }
 
   .desk_popup {
     display: block;
-    position: fixed;
+    
   }
 
   .desk_pop_container {
@@ -580,10 +582,14 @@ button:active {
     border-radius: 16px;
     padding: 20px;
     padding-bottom: 0;
-    max-width: 700px;
+    max-width: 50vw;
     max-height: 1090px;
     overflow: scroll;
     position: relative;
+    top: 50%;  
+    left: 50%;  
+    transform: translate(-50%, -50%);
+    margin: 0;
   }
 
   .imgs {
@@ -626,6 +632,7 @@ button:active {
     /* margin-top: 20px; */
     position: relative;
     top: 90px;
+    width: 55%;
   }
 
   .tec li {
@@ -643,6 +650,8 @@ button:active {
     display: flex;
     flex-direction: row;
     gap: 5px;
+    justify-content: space-around;
+    align-items: center;
   }
 
   .see-live,
@@ -651,12 +660,16 @@ button:active {
     border: 1px solid #1c32fd;
     border-radius: 8px;
     color: #1c03fa;
-    padding: 10px 12px;
-    margin-right: 1px;
-    height: 40px;
+    padding: 5px;
+    /* margin-right: 1px; */
+    height: 35px;
     display: flex;
-    width: 150px;
-    gap: 10px;
+    width: 120px;
+    gap: 5px;
+    font-size: 15px;
+    justify-content: center;
+    text-align: left;
+    align-items: flex-start;
   }
 
   .tp {
@@ -1166,6 +1179,10 @@ button:active {
   .pop_container p {
     margin-bottom: 0;
     font-size: 15px;
+  }
+
+  .pop_container > .imgs img {
+    width: 100%;
   }
 
   .top h2 {
