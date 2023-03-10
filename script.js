@@ -299,3 +299,59 @@ workMobile.forEach((work) => {
   });
   mobileWork.appendChild(item);
 });
+
+// form validatio
+
+const form = document.getElementById('form');
+const name = document.getElementById('name');
+const email = document.getElementById('email');
+const message = document.getElementById('message');
+
+function setErrorFor(input, message) {
+  const mess = document.createElement('div');
+  mess.className = 'error';
+  mess.appendChild(document.createTextNode(message));
+  input.parentNode.insertBefore(mess, input.nextElementSibling);
+  mess.style.position = 'absolute';
+
+  mess.style.top = `${input.offsetTop + input.offsetHeight}px`;
+  mess.style.left = `${input.offsetLeft}px`;
+
+  console.log('error');
+}
+
+function setSuccessFor(input) {
+  const m = input;
+  m.style.color = 'green';
+}
+
+function checkInputs() {
+  const nameValue = name.value.trim();
+  const emailValue = email.value.trim();
+  const messageValue = message.value.trim();
+
+  if (nameValue === '') {
+    setErrorFor(name, 'Name cannot be blank');
+  } else {
+    setSuccessFor(name);
+  }
+
+  if (emailValue === '') {
+    setErrorFor(email, 'Email cannot be blank');
+  } else if (/[A-Z]/.test(emailValue)) {
+    setErrorFor(email, "Please email doesn't contain Uppercase");
+  } else {
+    setSuccessFor(email);
+  }
+
+  if (messageValue === '') {
+    setErrorFor(message, 'Message cannot be blank');
+  } else {
+    setSuccessFor(message);
+  }
+}
+
+form.addEventListener('submit', (e) => {
+  e.preventDefault();
+  checkInputs();
+});
