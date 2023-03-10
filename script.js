@@ -23,9 +23,7 @@ const navLinksContainer = document.querySelector('.nav_links');
 const clo = document.querySelectorAll('.scroll');
 const toggleNav = () => {
   hamburgerToggler.classList.toggle('open');
-  const ariaToggle = hamburgerToggler.getAttribute('aria-expanded') === 'true'
-    ? 'false'
-    : 'true';
+  const ariaToggle = hamburgerToggler.getAttribute('aria-expanded') === 'true' ? 'false' : 'true';
   hamburgerToggler.setAttribute('aria-expanded', ariaToggle);
   navLinksContainer.classList.toggle('open');
   if (ariaToggle === 'true') {
@@ -50,8 +48,7 @@ const worksDesktop = [
   {
     title: 'Tonic',
     image: './images/desk_SnapshootPortfolio.png',
-    description:
-      "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.",
+    description: "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.",
     technologies: ['html', 'css', 'bootstrap', 'Ruby'],
     live: 'https://www.google.com/',
     source: 'https://www.google.com/',
@@ -60,8 +57,7 @@ const worksDesktop = [
   {
     title: 'Multi-Post Stories',
     image: './images/desk2_SnapshootPortfolio.png',
-    description:
-      'Experimental content creation feature that allows users to add to an existing story over the course of a day without spamming their friends.',
+    description: 'Experimental content creation feature that allows users to add to an existing story over the course of a day without spamming their friends.',
     technologies: ['html', 'css', 'bootstrap', 'Ruby'],
     live: 'https://www.google.com/',
     source: 'https://www.google.com/',
@@ -70,8 +66,7 @@ const worksDesktop = [
   {
     title: 'Facebook 360',
     image: './images/desk3_Snapshoot_Portfolio.png',
-    description:
-      "Exploring the future of media in Facebook's first Virtual Reality app; a place to discover and enjoy 360 photos and videos on Gear VR.",
+    description: "Exploring the future of media in Facebook's first Virtual Reality app; a place to discover and enjoy 360 photos and videos on Gear VR.",
     technologies: ['html', 'css', 'bootstrap', 'Ruby'],
     live: 'https://www.google.com/',
     source: 'https://www.google.com/',
@@ -80,8 +75,7 @@ const worksDesktop = [
   {
     title: 'Uber Navigation',
     image: 'images/desk4_SnapshootPortfolio.png',
-    description:
-      'A smart assistant to make driving more safe, efficient, and fun by unlocking your most expensive computer: your car.',
+    description: 'A smart assistant to make driving more safe, efficient, and fun by unlocking your most expensive computer: your car.',
     technologies: ['html', 'css', 'bootstrap', 'Ruby'],
     live: 'https://www.google.com/',
     source: 'https://www.google.com/',
@@ -93,8 +87,7 @@ const workMobile = [
   {
     title: 'Tonic',
     image: './images/mob_Portfoli1.png',
-    description:
-      'A daily selection of privately personalized reads; no accounts or sign-ups required.',
+    description: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
     technologies: ['html', 'css', 'javascript'],
     live: 'https://www.google.com/',
     source: 'https://www.google.com/',
@@ -103,8 +96,7 @@ const workMobile = [
   {
     title: 'Multi-Post Stories',
     image: './images/mob_Portfolio2.png',
-    description:
-      'A daily selection of privately personalized reads; no accounts or sign-ups required.',
+    description: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
     technologies: ['html', 'css', 'javascript'],
     live: 'https://www.google.com/',
     source: 'https://www.google.com/',
@@ -113,8 +105,7 @@ const workMobile = [
   {
     title: 'Tonic',
     image: './images/mob_Portfolio3.png',
-    description:
-      'A daily selection of privately personalized reads; no accounts or sign-ups required.',
+    description: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
     technologies: ['html', 'css', 'javascript'],
     live: 'https://www.google.com/',
     source: 'https://www.google.com/',
@@ -123,8 +114,7 @@ const workMobile = [
   {
     title: 'Multi-Post Stories',
     image: './images/mob_Portfolio4.png',
-    description:
-      'A daily selection of privately personalized reads; no accounts or sign-ups required.',
+    description: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
     technologies: ['html', 'css', 'javascript'],
     live: 'https://www.google.com/',
     source: 'https://www.google.com/',
@@ -153,16 +143,16 @@ function popup(arr) {
         <img src=${arr.image} alt="" class="mag">
       </div>
       <div class="deta">
-        <p class="par">Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an 
+        <p class="par">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an
             unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is
-            simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the 
-            industry's standard dummy text ever since the 1500s, when an unknown printer took 
-            a galley of type and scrambled it 1960s with the releorem Ipsum is simply dummy 
+            simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+            industry's standard dummy text ever since the 1500s, when an unknown printer took
+            a galley of type and scrambled it 1960s with the releorem Ipsum is simply dummy
             text of the printing and typesetting industry. Lorem Ipsum han printer took a galley
-              of type and scrambled it 1960s with the releawn printer took a galley of type and 
+              of type and scrambled it 1960s with the releawn printer took a galley of type and
               scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and
-              typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever 
+              typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever
               since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea</p>
         <div class="tec">
         <ul class="languages">
@@ -185,6 +175,10 @@ function popup(arr) {
 
   pop.appendChild(deskpop);
   document.body.appendChild(pop);
+  const close = deskpop.getElementsByClassName('closed')[0];
+  close.addEventListener('click', () => {
+    pop.classList.remove('desk_popup');
+  });
 }
 
 function mpopup(arr) {
@@ -206,7 +200,7 @@ function mpopup(arr) {
 <div class="imgs" id="images">
   <img src="${arr.image}" alt="" >
 </div>
-<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent       
+<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent
 </p>
 <ul class="languages">
   <li>html</li>
