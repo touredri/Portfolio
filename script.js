@@ -316,8 +316,6 @@ function setErrorFor(input, message) {
   mess.style.color='rgb(173 25 25 /94%)';
   mess.style.top = `${input.offsetTop + input.offsetHeight}px`;
   mess.style.left = `${input.offsetLeft}px`;
-
-  console.log('error');
 }
 
 function setSuccessFor(input) {
