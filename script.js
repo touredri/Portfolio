@@ -309,13 +309,14 @@ const message = document.getElementById('message');
 
 function setErrorFor(input, message) {
   const mess = document.createElement('div');
-  mess.className = 'error';
   mess.appendChild(document.createTextNode(message));
   input.parentNode.insertBefore(mess, input.nextElementSibling);
   mess.style.position = 'absolute';
-  mess.style.color='rgb(173 25 25 /94%)';
+  mess.style.color = 'rgb(171 2 2 / 94%)';
+  mess.style.marginBottom = '5px';
   mess.style.top = `${input.offsetTop + input.offsetHeight}px`;
   mess.style.left = `${input.offsetLeft}px`;
+  email.style.borderColor = 'rgb(173 25 25 /94%)';
 }
 
 function setSuccessFor(input) {
@@ -337,7 +338,8 @@ function checkInputs() {
   if (emailValue === '') {
     setErrorFor(email, 'Email cannot be blank');
   } else if (/[A-Z]/.test(emailValue)) {
-    setErrorFor(email, "Please email doesn't contain Uppercase");
+    setErrorFor(email, "Please don't put Uppercase in email !!!");
+    email.style.borderColor = 'rgb(173 25 25 /94%)';
   } else {
     setSuccessFor(email);
   }
