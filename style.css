@@ -1243,7 +1243,3 @@ button:active {
     position: fixed;
   }
 }
-
-.invalid {
-  background-color: rgb(230, 57, 57);
-}
