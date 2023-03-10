@@ -257,6 +257,13 @@ worksDesktop.forEach((work) => {
   buttons.addEventListener('click', () => popup(work));
 
   // Randomly swap the positions of div1 and div2
+  if(Math.random()<0.5){
+    item.appendChild(div1);
+    item.appendChild(div2);
+  }else{
+    item.appendChild(div2);
+    item.appendChild(div1);
+  }
   deskWork.appendChild(item);
 });
 
