@@ -209,7 +209,7 @@ function mpopup(arr) {
   <li>javaScript</li>
 </ul>
 <div class="buttons">
-  <button id="see" class="btna" margin-left="10px">See Live <a href="${arr.live}"></a><i class="fa-light fa-arrow-up-right-from-square"></i></a></button>
+  <button id="see" class="btna" margin-left="10px">See Live <a href="${arr.live}"><i class="fa-brands fa-edge"></i></a></button>
   <button id="source" class="btna">See Source <a href="${arr.source}"><i class="fa-brands fa-github"></i></a></button>
 </div>
 `;

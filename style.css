@@ -6,6 +6,36 @@ body {
   margin: 0;
 }
 
+.buttons {
+  font-size: 10px;
+  font-weight: 500;
+  margin-top: 30px;
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.see-live,
+.see-source {
+  background: #f9f9fc;
+  border: 1px solid #1c32fd;
+  border-radius: 8px;
+  color: #1c03fa;
+  padding: 5px;
+
+  /* margin-right: 1px; */
+  height: 35px;
+  display: flex;
+  width: 120px;
+  gap: 5px;
+  font-size: 15px;
+  justify-content: center;
+  text-align: left;
+  align-items: flex-start;
+}
+
 .no-scroll {
   overflow: hidden;
 }
@@ -1127,7 +1157,7 @@ button:active {
     right: 0;
     top: 0;
     bottom: 0;
-    height: 823px;
+    height: 833px;
     display: flex;
     justify-content: center;
     background: #c1c7d0;
@@ -1153,7 +1183,7 @@ button:active {
   .pop_container {
     display: grid;
     grid-template-rows: 1fr 45px 1fr 1fr 1fr 1fr;
-    max-height: 590px;
+    max-height: 610px;
     align-items: center;
     padding: 20px;
     background-color: white;
