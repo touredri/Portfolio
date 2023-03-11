@@ -26,7 +26,8 @@
         ]
       }
     ],
-    "csstree/validator": true
+    "csstree/validator": true,
+    "function-calc-no-invalid": true
   },
   "ignoreFiles": [
     "build/**",

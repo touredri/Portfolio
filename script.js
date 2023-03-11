@@ -23,7 +23,9 @@ const navLinksContainer = document.querySelector('.nav_links');
 const clo = document.querySelectorAll('.scroll');
 const toggleNav = () => {
   hamburgerToggler.classList.toggle('open');
-  const ariaToggle = hamburgerToggler.getAttribute('aria-expanded') === 'true' ? 'false' : 'true';
+  const ariaToggle = hamburgerToggler.getAttribute('aria-expanded') === 'true'
+    ? 'false'
+    : 'true';
   hamburgerToggler.setAttribute('aria-expanded', ariaToggle);
   navLinksContainer.classList.toggle('open');
   if (ariaToggle === 'true') {
@@ -48,7 +50,8 @@ const worksDesktop = [
   {
     title: 'Tonic',
     image: './images/desk_SnapshootPortfolio.png',
-    description: "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.",
+    description:
+      "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.",
     technologies: ['html', 'css', 'bootstrap', 'Ruby'],
     live: 'https://www.google.com/',
     source: 'https://www.google.com/',
@@ -57,7 +60,8 @@ const worksDesktop = [
   {
     title: 'Multi-Post Stories',
     image: './images/desk2_SnapshootPortfolio.png',
-    description: 'Experimental content creation feature that allows users to add to an existing story over the course of a day without spamming their friends.',
+    description:
+      'Experimental content creation feature that allows users to add to an existing story over the course of a day without spamming their friends.',
     technologies: ['html', 'css', 'bootstrap', 'Ruby'],
     live: 'https://www.google.com/',
     source: 'https://www.google.com/',
@@ -66,7 +70,8 @@ const worksDesktop = [
   {
     title: 'Facebook 360',
     image: './images/desk3_Snapshoot_Portfolio.png',
-    description: "Exploring the future of media in Facebook's first Virtual Reality app; a place to discover and enjoy 360 photos and videos on Gear VR.",
+    description:
+      "Exploring the future of media in Facebook's first Virtual Reality app; a place to discover and enjoy 360 photos and videos on Gear VR.",
     technologies: ['html', 'css', 'bootstrap', 'Ruby'],
     live: 'https://www.google.com/',
     source: 'https://www.google.com/',
@@ -75,7 +80,8 @@ const worksDesktop = [
   {
     title: 'Uber Navigation',
     image: 'images/desk4_SnapshootPortfolio.png',
-    description: 'A smart assistant to make driving more safe, efficient, and fun by unlocking your most expensive computer: your car.',
+    description:
+      'A smart assistant to make driving more safe, efficient, and fun by unlocking your most expensive computer: your car.',
     technologies: ['html', 'css', 'bootstrap', 'Ruby'],
     live: 'https://www.google.com/',
     source: 'https://www.google.com/',
@@ -87,7 +93,8 @@ const workMobile = [
   {
     title: 'Tonic',
     image: './images/mob_Portfoli1.png',
-    description: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
+    description:
+      'A daily selection of privately personalized reads; no accounts or sign-ups required.',
     technologies: ['html', 'css', 'javascript'],
     live: 'https://www.google.com/',
     source: 'https://www.google.com/',
@@ -96,7 +103,8 @@ const workMobile = [
   {
     title: 'Multi-Post Stories',
     image: './images/mob_Portfolio2.png',
-    description: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
+    description:
+      'A daily selection of privately personalized reads; no accounts or sign-ups required.',
     technologies: ['html', 'css', 'javascript'],
     live: 'https://www.google.com/',
     source: 'https://www.google.com/',
@@ -105,7 +113,8 @@ const workMobile = [
   {
     title: 'Tonic',
     image: './images/mob_Portfolio3.png',
-    description: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
+    description:
+      'A daily selection of privately personalized reads; no accounts or sign-ups required.',
     technologies: ['html', 'css', 'javascript'],
     live: 'https://www.google.com/',
     source: 'https://www.google.com/',
@@ -114,7 +123,8 @@ const workMobile = [
   {
     title: 'Multi-Post Stories',
     image: './images/mob_Portfolio4.png',
-    description: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
+    description:
+      'A daily selection of privately personalized reads; no accounts or sign-ups required.',
     technologies: ['html', 'css', 'javascript'],
     live: 'https://www.google.com/',
     source: 'https://www.google.com/',
@@ -299,3 +309,69 @@ workMobile.forEach((work) => {
   });
   mobileWork.appendChild(item);
 });
+
+// form validatio
+
+const form = document.getElementById('form');
+const email = document.getElementById('email');
+
+function setErrorFor(input, message) {
+  const mess = document.createElement('div');
+  mess.appendChild(document.createTextNode(message));
+  mess.classList.add('error-message');
+  input.parentNode.insertBefore(mess, input.nextElementSibling);
+  mess.style.position = 'absolute';
+  mess.style.color = 'rgb(171 2 2 / 94%)';
+  mess.style.marginBottom = '5px';
+  mess.style.top = `${input.offsetTop + input.offsetHeight}px`;
+  mess.style.left = `${input.offsetLeft}px`;
+}
+
+function checkInputs() {
+  const emailValue = email.value.trim();
+
+  if (emailValue === '') {
+    setErrorFor(email, 'Email cannot be blank');
+  }
+  if (/[A-Z]/.test(emailValue)) {
+    setErrorFor(email, "Please don't put Uppercase in email !!!");
+  }
+}
+
+form.addEventListener('submit', (e) => {
+  const errorMessages = form.querySelectorAll('.error-message');
+  errorMessages.forEach((errorMessage) => {
+    errorMessage.remove();
+  });
+  checkInputs();
+  const newErrorMessages = form.querySelectorAll('.error-message');
+  if (newErrorMessages.length === 0) {
+    form.submit();
+  } else {
+    e.preventDefault();
+  }
+});
+
+// preserve data
+
+const name = document.getElementById('name');
+const message = document.getElementById('message');
+
+const inputField = [name, email, message];
+
+inputField.forEach((item) => {
+  item.addEventListener('input', () => {
+    const data = {
+      name: name.value,
+      email: email.value,
+      message: message.value,
+    };
+
+    localStorage.setItem('client-data', JSON.stringify(data));
+  });
+});
+
+const dataSaved = JSON.parse(localStorage.getItem('client-data'));
+name.value = dataSaved.name;
+email.value = dataSaved.email;
+message.value = dataSaved.message;
