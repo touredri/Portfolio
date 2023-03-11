@@ -23,10 +23,9 @@ const navLinksContainer = document.querySelector('.nav_links');
 const clo = document.querySelectorAll('.scroll');
 const toggleNav = () => {
   hamburgerToggler.classList.toggle('open');
-  const ariaToggle =
-    hamburgerToggler.getAttribute('aria-expanded') === 'true'
-      ? 'false'
-      : 'true';
+  const ariaToggle = hamburgerToggler.getAttribute('aria-expanded') === 'true'
+    ? 'false'
+    : 'true';
   hamburgerToggler.setAttribute('aria-expanded', ariaToggle);
   navLinksContainer.classList.toggle('open');
   if (ariaToggle === 'true') {
@@ -352,3 +351,27 @@ form.addEventListener('submit', (e) => {
     e.preventDefault();
   }
 });
+
+// preserve data
+
+const name = document.getElementById('name');
+const message = document.getElementById('message');
+
+const inputField = [name, email, message];
+
+inputField.forEach((item) => {
+  item.addEventListener('input', () => {
+    const data = {
+      name: name.value,
+      email: email.value,
+      message: message.value,
+    };
+
+    localStorage.setItem('client-data', JSON.stringify(data));
+  });
+});
+
+const dataSaved = JSON.parse(localStorage.getItem('client-data'));
+name.value = dataSaved.name;
+email.value = dataSaved.email;
+message.value = dataSaved.message;
