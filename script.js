@@ -1,3 +1,5 @@
+// smooth defilement by menu link click
+
 function scrollToSection(targetId) {
   const target = document.getElementById(targetId);
   window.scrollTo({
@@ -15,7 +17,7 @@ links.forEach((link) => {
   });
 });
 
-// menu content display
+// menu content display in mobile
 
 const hamburgerToggler = document.querySelector('.hamburger');
 const log = document.querySelector('.logo');
@@ -44,7 +46,8 @@ const toggleNav = () => {
 };
 hamburgerToggler.addEventListener('click', toggleNav);
 
-// works section
+// My projects section set dynamicaly
+// For desktop view
 
 const worksDesktop = [
   {
@@ -89,6 +92,8 @@ const worksDesktop = [
   },
 ];
 
+// for mobile view
+
 const workMobile = [
   {
     title: 'Tonic',
@@ -131,6 +136,9 @@ const workMobile = [
     tag: ['Canopy', 'Backend dev', '2015'],
   },
 ];
+
+// popup window show by clicking on see projet button
+//for desktop view
 
 function popup(arr) {
   const pop = document.createElement('div');
@@ -182,21 +190,23 @@ function popup(arr) {
         </div>
       </div>
   `;
-
+  
   pop.appendChild(deskpop);
   const project = document.querySelector('.desktop-project');
-  project.appendChild(pop);
+  project.appendChild(pop); // attach to DOM inside desktop-project div
   const close = deskpop.getElementsByClassName('closed')[0];
   close.addEventListener('click', () => {
-    pop.classList.remove('desk_popup');
+    pop.classList.remove('desk_popup'); // close popup window
   });
 }
 
+// for mobile view
+
 function mpopup(arr) {
-  const mpop = document.createElement('div');
+  const mpop = document.createElement('div'); // popup container creation
   mpop.className = 'popup';
-  const mobpop = document.createElement('div');
-  mobpop.className = 'pop_container';
+  const mobpop = document.createElement('div'); // popup contain div
+  mobpop.className = 'pop_container'; // give it a class name
   mobpop.innerHTML = `<div class="top">
   <h2 id="names">${arr.title}</h2>
   <i class="fa-solid fa-times close popclose"></i>
@@ -224,15 +234,16 @@ function mpopup(arr) {
 </div>
 `;
   mpop.appendChild(mobpop);
-  document.body.appendChild(mpop);
-
+  document.body.appendChild(mpop); // attached to the HTML Document 
   mobpop.getElementsByClassName('close')[0].addEventListener('click', () => {
-    mpop.classList.add('show');
+    mpop.classList.add('show'); // close popup window
   });
 }
 
 const mobileWork = document.querySelector('.mobile-project');
 const deskWork = document.querySelector('.desktop-project');
+
+// creation dynamicaly for each project
 
 worksDesktop.forEach((work) => {
   const item = document.createElement('div');
@@ -310,12 +321,12 @@ workMobile.forEach((work) => {
   mobileWork.appendChild(item);
 });
 
-// form validatio
+// form validation
 
 const form = document.getElementById('form');
 const email = document.getElementById('email');
 
-function setErrorFor(input, message) {
+function setErrorFor(input, message) { // function that show the error
   const mess = document.createElement('div');
   mess.appendChild(document.createTextNode(message));
   mess.classList.add('error-message');
@@ -327,7 +338,7 @@ function setErrorFor(input, message) {
   mess.style.left = `${input.offsetLeft}px`;
 }
 
-function checkInputs() {
+function checkInputs() { // function that check the input for diferent constraint then call setErrorfor()
   const emailValue = email.value.trim();
 
   if (emailValue === '') {
@@ -338,7 +349,7 @@ function checkInputs() {
   }
 }
 
-form.addEventListener('submit', (e) => {
+form.addEventListener('submit', (e) => { // Listen the submit button for submission
   const errorMessages = form.querySelectorAll('.error-message');
   errorMessages.forEach((errorMessage) => {
     errorMessage.remove();
@@ -352,21 +363,17 @@ form.addEventListener('submit', (e) => {
   }
 });
 
-// preserve data
+// preserve data into navigat
 
 const name = document.getElementById('name');
 const message = document.getElementById('message');
 
 const inputField = [name, email, message];
+const data = {};
 
 inputField.forEach((item) => {
   item.addEventListener('input', () => {
-    const data = {
-      name: name.value,
-      email: email.value,
-      message: message.value,
-    };
-
+      data[item.id] = item.value;   
     localStorage.setItem('client-data', JSON.stringify(data));
   });
 });
