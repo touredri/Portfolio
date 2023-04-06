@@ -49,12 +49,12 @@ hamburgerToggler.addEventListener('click', toggleNav);
 const worksDesktop = [
   {
     title: 'Tonic',
-    image: './images/desk_SnapshootPortfolio.png',
+    image: './images/capstone.png',
     description:
       "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.",
     technologies: ['html', 'css', 'bootstrap', 'Ruby'],
-    live: 'https://www.google.com/',
-    source: 'https://www.google.com/',
+    live: 'https://touredri.github.io/JS-Bootcamp/',
+    source: 'https://github.com/touredri/JS-Bootcamp',
     tag: ['Canopy', 'Backend dev', '2015'],
   },
   {
@@ -63,8 +63,8 @@ const worksDesktop = [
     description:
       'Experimental content creation feature that allows users to add to an existing story over the course of a day without spamming their friends.',
     technologies: ['html', 'css', 'bootstrap', 'Ruby'],
-    live: 'https://www.google.com/',
-    source: 'https://www.google.com/',
+    live: 'https://www.github.com/touredri',
+    source: 'https://www.github.com/touredri',
     tag: ['Facebook', 'Full stack', '2015'],
   },
   {
@@ -73,18 +73,18 @@ const worksDesktop = [
     description:
       "Exploring the future of media in Facebook's first Virtual Reality app; a place to discover and enjoy 360 photos and videos on Gear VR.",
     technologies: ['html', 'css', 'bootstrap', 'Ruby'],
-    live: 'https://www.google.com/',
-    source: 'https://www.google.com/',
+    live: 'https://www.github.com/touredri',
+    source: 'https://www.github.com/touredri',
     tag: ['Facebook', 'Full stack', '2015'],
   },
   {
     title: 'Uber Navigation',
-    image: 'images/desk4_SnapshootPortfolio.png',
+    image: 'images/todolist.png',
     description:
       'A smart assistant to make driving more safe, efficient, and fun by unlocking your most expensive computer: your car.',
     technologies: ['html', 'css', 'bootstrap', 'Ruby'],
-    live: 'https://www.google.com/',
-    source: 'https://www.google.com/',
+    live: 'https://touredri.github.io/todolist/dist/',
+    source: 'https://www.github.com/touredri/todolist',
     tag: ['Uber', 'Lead developer', '2018'],
   },
 ];
@@ -92,12 +92,12 @@ const worksDesktop = [
 const workMobile = [
   {
     title: 'Tonic',
-    image: './images/mob_Portfoli1.png',
+    image: './images/mob.png',
     description:
       'A daily selection of privately personalized reads; no accounts or sign-ups required.',
     technologies: ['html', 'css', 'javascript'],
-    live: 'https://www.google.com/',
-    source: 'https://www.google.com/',
+    live: 'https://touredri.github.io/JS-Bootcamp/',
+    source: 'https://github.com/touredri/JS-Bootcamp',
     tag: ['Canopy', 'Backend dev', '2015'],
   },
   {
@@ -106,8 +106,8 @@ const workMobile = [
     description:
       'A daily selection of privately personalized reads; no accounts or sign-ups required.',
     technologies: ['html', 'css', 'javascript'],
-    live: 'https://www.google.com/',
-    source: 'https://www.google.com/',
+    live: 'https://www.github.com/touredri',
+    source: 'https://www.github.com/touredri',
     tag: ['Canopy', 'Backend dev', '2015'],
   },
   {
@@ -116,18 +116,18 @@ const workMobile = [
     description:
       'A daily selection of privately personalized reads; no accounts or sign-ups required.',
     technologies: ['html', 'css', 'javascript'],
-    live: 'https://www.google.com/',
-    source: 'https://www.google.com/',
+    live: 'https://www.github.com/touredri',
+    source: 'https://www.github.com/touredri',
     tag: ['Canopy', 'Backend dev', '2015'],
   },
   {
     title: 'Multi-Post Stories',
-    image: './images/mob_Portfolio4.png',
+    image: './images/todomob.png',
     description:
       'A daily selection of privately personalized reads; no accounts or sign-ups required.',
     technologies: ['html', 'css', 'javascript'],
-    live: 'https://www.google.com/',
-    source: 'https://www.google.com/',
+    live: 'https://touredri.github.io/todolist/dist/',
+    source: 'https://www.github.com/touredri/todolist',
     tag: ['Canopy', 'Backend dev', '2015'],
   },
 ];
@@ -358,14 +358,10 @@ const name = document.getElementById('name');
 const message = document.getElementById('message');
 
 const inputField = [name, email, message];
-
+const data = {};
 inputField.forEach((item) => {
   item.addEventListener('input', () => {
-    const data = {
-      name: name.value,
-      email: email.value,
-      message: message.value,
-    };
+    data[item.id] = item.value;
 
     localStorage.setItem('client-data', JSON.stringify(data));
   });
