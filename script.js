@@ -51,10 +51,10 @@ hamburgerToggler.addEventListener('click', toggleNav);
 
 const worksDesktop = [
   {
-    title: 'Tonic',
+    title: 'Js BootCamp',
     image: './images/capstone.png',
     description:
-      "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.",
+      "is an online full course to learn JavaScript with interactions and practices, sign-ups required. has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.",
     technologies: ['html', 'css', 'bootstrap', 'Ruby'],
     live: 'https://touredri.github.io/JS-Bootcamp/',
     source: 'https://github.com/touredri/JS-Bootcamp',
@@ -81,10 +81,10 @@ const worksDesktop = [
     tag: ['Facebook', 'Full stack', '2015'],
   },
   {
-    title: 'Uber Navigation',
+    title: 'Todo list',
     image: 'images/todolist.png',
     description:
-      'A smart assistant to make driving more safe, efficient, and fun by unlocking your most expensive computer: your car.',
+      'A smart assistant to make task easy to remember, efficient, and fun by unlocking your most expensive computer: your phone.',
     technologies: ['html', 'css', 'bootstrap', 'Ruby'],
     live: 'https://touredri.github.io/todolist/dist/',
     source: 'https://www.github.com/touredri/todolist',
@@ -96,10 +96,10 @@ const worksDesktop = [
 
 const workMobile = [
   {
-    title: 'Tonic',
+    title: 'Js BootCamp',
     image: './images/mob.png',
     description:
-      'A daily selection of privately personalized reads; no accounts or sign-ups required.',
+      'is an online full course to learn JavaScript with interactions and practices',
     technologies: ['html', 'css', 'javascript'],
     live: 'https://touredri.github.io/JS-Bootcamp/',
     source: 'https://github.com/touredri/JS-Bootcamp',
@@ -129,7 +129,7 @@ const workMobile = [
     title: 'Multi-Post Stories',
     image: './images/todomob.png',
     description:
-      'A daily selection of privately personalized reads; no accounts or sign-ups required.',
+      'A smart assistant to make task easy to remember, efficient, and fun  expensive computer',
     technologies: ['html', 'css', 'javascript'],
     live: 'https://touredri.github.io/todolist/dist/',
     source: 'https://www.github.com/touredri/todolist',
